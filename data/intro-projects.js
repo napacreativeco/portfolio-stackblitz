@@ -1,0 +1,38 @@
+export const introProjectData = [
+  {
+    id: '001',
+    name: 'Usal Project',
+    image: 'https://via.placeholder.com/500x900?text=Usal+Project',
+    url: 'https://www.usalproject.com',
+    tag: 'web-development',
+    description: 'Lorem ipsum',
+    slug: 'usal',
+  },
+  {
+    id: '002',
+    name: 'WALD',
+    image: 'https://via.placeholder.com/500x900?text=WALD',
+    url: 'https://www.usalproject.com',
+    tag: 'web-development',
+    description: 'Lorem ipsum',
+    slug: 'wald',
+  },
+  {
+    id: '003',
+    name: 'SEVENSEVENSEVEN',
+    image: 'https://via.placeholder.com/500x900?text=SEVENSEVENSEVEN',
+    url: 'https://www.usalproject.com',
+    tag: 'web-development',
+    description: 'Lorem ipsum',
+    slug: 'seven',
+  },
+  {
+    id: '004',
+    name: 'NV Massage & Wellness',
+    image: 'https://via.placeholder.com/500x900?text=NVMAW',
+    url: 'https://www.usalproject.com',
+    tag: 'web-design, web-development',
+    description: 'Lorem ipsum',
+    slug: 'nvmaw',
+  },
+];
