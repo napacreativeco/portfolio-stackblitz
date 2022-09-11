@@ -2,7 +2,8 @@ import * as React from 'react';
 import styled from 'styled-components';
 import Link from '../Link.js';
 
-import selfie from 'assets/selfie.jpg';
+const selfie =
+  'https://github.com/napacreativeco/portfolio-stackblitz/blob/main/assets/selfie.jpg?raw=true';
 
 const MoreInfoCSS = styled.section`
   text-align: center;
@@ -18,14 +19,19 @@ const MoreInfoCSS = styled.section`
     line-height: 0.8;
     text-transform: uppercase;
   }
-  img {
+  .image-container {
     border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    max-width: 200px;
-    max-height: 200px;
-    
+    max-width: 180px;
+    max-height: 180px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  img {
+    width: 120%;
+    height: 120%;
+    margin: 0 -10%;
+    filter: grayscale(100%);
   }
 
   @media screen and (max-width: 767px) {
@@ -35,12 +41,13 @@ const MoreInfoCSS = styled.section`
   }
 `;
 
-
 export default function MoreInfo() {
   return (
     <MoreInfoCSS>
       <div class="row">
-        <img src={selfie} alt="" />
+        <div class="image-container">
+          <img src={selfie} alt="" />
+        </div>
         <p>
           My name is James. I create fast and functional websites that can be
           customized to your business's needs. I've been making websites for
