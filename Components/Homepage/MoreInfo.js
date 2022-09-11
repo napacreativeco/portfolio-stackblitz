@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Headline from '../Headline.js';
 import Link from '../Link.js';
+
+import selfie from 'assets/selfie.jpg';
 
 const MoreInfoCSS = styled.section`
   text-align: center;
@@ -34,29 +35,12 @@ const MoreInfoCSS = styled.section`
   }
 `;
 
-const CTA = styled.button`
-  background: #fff;
-  border: 0;
-  display: flex;
-  align-items: center;
-  padding: 4px 8px 8px 8px;
-  margin: 0 auto;
-  cursor: pointer;
-
-  &:hover {
-    background: #000;
-    color: #fff;
-  }
-`;
 
 export default function MoreInfo() {
   return (
     <MoreInfoCSS>
       <div class="row">
-        <img
-          src="https://via.placeholder.com/500x900?text=James+Rogers"
-          alt=""
-        />
+        <img src={selfie} alt="" />
         <p>
           My name is James. I create fast and functional websites that can be
           customized to your business's needs. I've been making websites for
