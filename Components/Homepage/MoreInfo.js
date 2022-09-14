@@ -55,7 +55,7 @@ export default function MoreInfo() {
           over 6 years and creating graphics for a little less than that.
         </p>
 
-        <div style={{ display: 'inline-block' }}>
+        <div style={{ display: 'inline-block', paddingTop: '10px' }}>
           <Link url="mailto:hello@napacreativeco.com">
             <Headline>Contact me</Headline>
           </Link>

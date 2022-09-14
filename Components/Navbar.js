@@ -47,10 +47,10 @@ export default function Navbar() {
           <div style={{ display: menuOpen }}>
             <NavbarList>
               <NavbarListItem>
-                <Link url="#">Item 1</Link>
+                <Link url="#work-section">Work</Link>
               </NavbarListItem>
               <NavbarListItem>
-                <Link url="#">Item 2</Link>
+                <Link url="#about-section">About</Link>
               </NavbarListItem>
             </NavbarList>
           </div>

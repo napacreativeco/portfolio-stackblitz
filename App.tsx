@@ -33,8 +33,8 @@ export default function App() {
     <div id="app">
       <Navbar />
       <Hero />
-      <IntroProjectGrid />
-      <About />
+      <IntroProjectGrid id="work-section" />
+      <About id="about-section" />
       <Slider />
       <MoreInfo />
       <Footer />
