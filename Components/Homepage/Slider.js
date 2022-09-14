@@ -40,20 +40,6 @@ export default function Slider() {
             style={slidestyles}
           >
             <SlideImage src={slide.image} alt={slide.name} />
-            <div
-              style={{
-                visibility: isMoused,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                width: '80%',
-                height: '100%',
-                textAlign: 'left',
-              }}
-            >
-              <h2 style={slideheadline}>{slide.name}</h2>
-              <p style={slidetext}>{slide.description}</p>
-            </div>
           </SwiperSlide>
         );
       })}
@@ -101,7 +87,8 @@ const sliderData = [
 ];
 
 const slidestyles = {
-  height: '60vh',
+  width: '90vw',
+  height: '90vw',
   objectFit: 'cover',
   objectPosition: 'center center',
   position: 'relative',
