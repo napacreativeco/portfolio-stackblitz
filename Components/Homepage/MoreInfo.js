@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Link from '../Link.js';
+import Headline from '../Headline.js';
 
 const selfie =
   'https://github.com/napacreativeco/portfolio-stackblitz/blob/main/assets/selfie.jpg?raw=true';
@@ -55,7 +56,9 @@ export default function MoreInfo() {
         </p>
 
         <div style={{ display: 'inline-block' }}>
-          <Link url="mailto:hello@napacreativeco.com">Contact me</Link>
+          <Link url="mailto:hello@napacreativeco.com">
+            <Headline>Contact me</Headline>
+          </Link>
         </div>
       </div>
     </MoreInfoCSS>
