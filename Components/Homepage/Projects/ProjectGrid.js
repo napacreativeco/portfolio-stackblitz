@@ -179,7 +179,7 @@ const Item = styled.div`
 const Counter = styled.p`
   position: absolute;
   zIndex: 1;
-  top: 2px;
+  top: -14px;
   right: -24px;
   transform: rotate(90deg);
   font-weight: 800;
