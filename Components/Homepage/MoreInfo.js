@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import Link from '../Link.js';
 import Headline from '../Headline.js';
+import Fade from 'react-reveal/Fade';
 
 const selfie =
   'https://github.com/napacreativeco/portfolio-stackblitz/blob/main/assets/selfie.jpg?raw=true';
@@ -11,8 +12,11 @@ export default function MoreInfo() {
     <MoreInfoCSS>
       <div class="row">
         <div class="image-container">
-          <img src={selfie} alt="" />
+          <Fade left>
+            <img src={selfie} alt="" />
+          </Fade>
         </div>
+
         <p>
           My name is James. I create fast and functional websites that can be
           customized to your business's needs. I've been making websites for
